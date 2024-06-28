@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MedicAnalitic</title>
+    <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la página de educación del cuerpo humano */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #bc4e9c;
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .contenido-principal {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .contenido-principal .texto {
+            flex: 1;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contenido-principal .texto h2 {
+            margin-bottom: 20px;
+            color: #bc4e9c;
+        }
+
+        .contenido-principal .texto p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .sketchfab-embed-wrapper {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .partes-corazon {
+            max-width: 800px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .partes-corazon h2 {
+            color: #bc4e9c;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .partes-corazon ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        .partes-corazon li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .partes-corazon li strong {
+            color: #bc4e9c;
+            margin-right: 10px;
+        }
+
+        .partes-corazon li img {
+            max-width: 50px;
+            margin-left: 10px;
+            border-radius: 50%;
+            border: 2px solid #bc4e9c;
+        }
+
+        footer {
+            background-color: #414141;
+            color: #ccc;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+
+        .contenedor-footer {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .content-foo {
+            text-align: center;
+        }
+
+        .content-foo h4 {
+            color: #fff;
+            border-bottom: 3px solid #af20d3;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .content-foo p {
+            color: #ccc;
+        }
+
+        .titulo-final {
+            font-size: 18px;
+            color: #9e9797;
+            margin-top: 20px;
+        }
+
+        .cards-grid {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding-bottom: 60px;
+        }
+
+        .flip-card {
+            width: 320px;
+            height: 504px;
+            perspective: 2000px;
+            margin: 0 20px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 28px;
+            transition: all 550ms cubic-bezier(0.1, 0.22, 0.8, 1.13);
+            transform-style: preserve-3d;
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 28px;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .flip-card-back {
+            font-size: 1.25rem;
+            text-align: center;
+            display: grid;
+            place-items: center;
+            padding: 32px;
+            background-color: #b1cfc8;
+            transform: rotateY(180deg);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(-180deg);
+        }
+        h5 {
+        text-align: center;
+        color: #bc4e9c; /* Color rosa pálido */
+        font-size: 1.5rem; /* Tamaño de fuente aumentado */
+        margin-bottom: 2.0em; /* Espacio de 2.0 unidades */
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#acerca-de">Acerca de</a>
+            <a href="#actividades">Actividades</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <section class="textos-header" id="inicio">
+            <h1>Potencia tu conocimiento</h1>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+
+    <section class="contenido-principal">
+        <div class="texto">
+            <h2>Explora el cuerpo humano en 3D</h2>
+            <p>En esta sección, podrás aprender sobre la anatomía humana de una manera interactiva y educativa. Utilizamos tecnología avanzada de modelado 3D para proporcionar una experiencia visualmente rica y educativa sobre las partes y funciones del cuerpo humano.</p>
+            <p>Explora diferentes sistemas corporales, como el sistema nervioso, cardiovascular, digestivo y más. Cada modelo está diseñado para facilitar el aprendizaje y comprensión de la anatomía.</p>
+        </div>
+    </section>
+
+    <section class="contenido-principal">
+        <div class="sketchfab-embed-wrapper">
+            <iframe title="Corazón" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9466a28461834170a50a8c6f62592612/embed" style="width: 100%; height: 400px; border: none;"></iframe>
+        </div>
+    </section>
+
+    <!-- Sección informativa del corazón -->
+    <section>
+        <h5>
+            <span>El corazón</span>
+        </h5>
+        <div class="cards-grid">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('https://t1.uc.ltmcdn.com/es/posts/2/9/5/cual_es_el_tamano_normal_del_corazon_30592_600.jpg');">
+                    </div>
+                    <div class="flip-card-back">
+                        Tamaño y Función, El corazón humano tiene aproximadamente el tamaño de un puño y bombea sangre a través de todo el cuerpo. En reposo, bombea alrededor de 5 litros de sangre por minuto y puede aumentar esta cantidad significativamente durante el ejercicio físico
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('https://i.pinimg.com/originals/82/8b/83/828b83ac82ece3ba27a900bd026e6043.gif');">
+                    </div>
+                    <div class="flip-card-back">
+                        Electrofisiología, El corazón tiene su propio sistema eléctrico que regula su ritmo y función. Este sistema genera impulsos eléctricos que hacen que el corazón se contraiga rítmicamente, asegurando así el flujo constante de sangre por todo el cuerpo.
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front" style="background-image: url('https://img2.rtve.es/i/?w=1600&i=1442479441019.jpg');">
+                    </div>
+                    <div class="flip-card-back">
+                        Capacidad de Regeneración Limitada, A diferencia de otros órganos como la piel o el hígado, el corazón humano tiene una capacidad limitada para regenerarse después de sufrir daño, como un ataque al corazón. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <h4>Teléfono</h4>
+                <p>+507 65388791</p>
+            </div>
+            <div class="content-foo">
+                <h4>Email</h4>
+                <p>Herreragabriel744@gmail.com</p>
+            </div>
+            <div class="content-foo">
+                <h4>Localización</h4>
+                <p>Panamá</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; MedicAnalitic | Gabriel Herrera</h2>
+    </footer>
+
+</body>
+
+</html>
