@@ -1,0 +1,11 @@
+Model Information:
+* title:	Esqueleto Y Sistemas Circulatorio, Digestivo
+* source:	https://sketchfab.com/3d-models/esqueleto-y-sistemas-circulatorio-digestivo-ce419ee758b04a04bcee9b72e3b98254
+* author:	EVE3D UNAM (https://sketchfab.com/eve3d_unam)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Esqueleto Y Sistemas Circulatorio, Digestivo" (https://sketchfab.com/3d-models/esqueleto-y-sistemas-circulatorio-digestivo-ce419ee758b04a04bcee9b72e3b98254) by EVE3D UNAM (https://sketchfab.com/eve3d_unam) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
